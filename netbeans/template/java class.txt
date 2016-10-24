@@ -1,0 +1,18 @@
+<#assign licenseFirst = "/*">
+<#assign licensePrefix = " * ">
+<#assign licenseLast = " */">
+<#include "${project.licensePath}">
+
+<#if package?? && package != "">
+package ${package};
+
+</#if>
+/**
+ * @author ${user}
+ * @version java version "1.8.0_92"
+ * @os windows 10
+ * @date ${date}
+ */
+public class ${name} {
+
+}
